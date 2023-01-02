@@ -1,8 +1,8 @@
 <!-- Start of Footer -->
 <div class="footer-container">
   <div class="footer-inner-container">
-    <a href="/" class="footer-logo-cont">
-      <img class="footer-logo" src="/media/nav-logo.png" alt="navbar logo" />
+    <a href="{{ '/' | relative_url }}" class="footer-logo-cont">
+      <img class="footer-logo" src="{{ 'media/nav-logo.png' | relative_url }}" alt="navbar logo" />
     </a>
     <div class="footer-col">
       <b>Contact</b>
@@ -13,17 +13,17 @@
     </div>
     <div class="footer-col">
       <b>Navigation</b>
-      <a href="/">Home</a>
-      <a href="/mario">Product</a>
-      <a href="/about">About Us</a>
-      <a href="/technology">Technology</a>
-      <a href="/news">News</a>
-      <a href="/contact">Contact Us</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/mario' | relative_url }}">Product</a>
+      <a href="{{ '/about' | relative_url }}">About Us</a>
+      <a href="{{ '/technology' | relative_url }}">Technology</a>
+      <a href="{{ '/news' | relative_url }}">News</a>
+      <a href="{{ '/contact' | relative_url }}">Contact Us</a>
     </div>
     <div class="footer-col">
       <b>Recent News</b>
       {% for post in site.posts %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% endfor %}
     </div>
     <div class="footer-col">

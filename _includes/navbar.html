@@ -1,28 +1,28 @@
     <!-- Navbar container -->
     <nav class="navbar-container">
-        <a href="/">
-          <img class="navbar-logo" src="/media/nav-logo.png" alt="navbar logo" />
+"/mario"        <a href="/">
+          <img class="navbar-logo" src="{{ 'media/nav-logo.png' | relative_url }}" alt="navbar logo" />
         </a>
         <div class="navbar-links-container">
-          <div class="navbar-link-wrapper" style="width:51.63px"><a class="navbar-link" {% if page.url == "/mario.html" %}style="font-weight: bold;"{% endif %} href="/mario">Product</a></div>
-          <div class="navbar-link-wrapper" style="width:62.32px"><a class="navbar-link" {% if page.url == '/about.html' %}style="font-weight: bold; "{% endif %} href="/about">About Us</a></div>
-          <div class="navbar-link-wrapper" style="width:75.55px"><a class="navbar-link" {% if page.url == '/technology.html' %}style="font-weight: bold;""{% endif %} href="/technology">Technology</a></div>
-          <div class="navbar-link-wrapper" style="width: 38.12px"><a class="navbar-link" {% if page.url == '/news.html' %}style="font-weight: bold; ""{% endif %} href="/news">News</a></div>
-          <div class="navbar-link-wrapper" style="width:75.65px"><a class="navbar-link" {% if page.url == '/contact.html' %}style="font-weight: bold;""{% endif %} href="/contact">Contact Us</a></div>
+          <div class="navbar-link-wrapper" style="width:51.63px"><a class="navbar-link" {% if page.url == "/mario.html" %}style="font-weight: bold;"{% endif %} href="{{ '/mario' | relative_url }}">Product</a></div>
+          <div class="navbar-link-wrapper" style="width:62.32px"><a class="navbar-link" {% if page.url == '/about.html' %}style="font-weight: bold; "{% endif %} href="{{ '/about' | relative_url }}">About Us</a></div>
+          <div class="navbar-link-wrapper" style="width:75.55px"><a class="navbar-link" {% if page.url == '/technology.html' %}style="font-weight: bold;""{% endif %} href="{{ '/technology' | relative_url }}">Technology</a></div>
+          <div class="navbar-link-wrapper" style="width: 38.12px"><a class="navbar-link" {% if page.url == '/news.html' %}style="font-weight: bold; ""{% endif %} href="{{ '/news' | relative_url }}">News</a></div>
+          <div class="navbar-link-wrapper" style="width:75.65px"><a class="navbar-link" {% if page.url == '/contact.html' %}style="font-weight: bold;""{% endif %} href="{{ '/contact' | relative_url }}">Contact Us</a></div>
         </div>
         <a onclick="openNav()" class="mobile-only">
 
-          <img src="/media/burger-menu.svg">
+          <img src="{{ 'media/burger-menu.svg' | relative_url }}">
         </a>
 
         <div id="mobile-nav" class="mobile-nav-container mobile-only">
-          <a class="mobile-nav-close" onclick="closeNav()"><img src="/media/close-icon.svg" ></a>
+          <a class="mobile-nav-close" onclick="closeNav()"><img src="{{ 'media/close-icon.svg' | relative_url }}" ></a>
           <a class="mobile-nav-link-link" {% if page.url == "/" %}style="font-weight: bold;"{% endif %} href="/">Home</a>
-          <a class="mobile-nav-link-link" {% if page.url == "/mario.html" %}style="font-weight: bold;"{% endif %} href="/mario">Product</a>
-          <a class="mobile-nav-link-link" {% if page.url == '/about.html' %}style="font-weight: bold; "{% endif %} href="/about">About Us</a>
-          <a class="mobile-nav-link-link" {% if page.url == '/technology.html' %}style="font-weight: bold;""{% endif %} href="/technology">Technology</a>
-          <a class="mobile-nav-link-link" {% if page.url == '/news.html' %}style="font-weight: bold; ""{% endif %} href="/news">News</a>
-          <a class="mobile-nav-link-link" {% if page.url == '/contact.html' %}style="font-weight: bold;""{% endif %} href="/contact">Contact Us</a>
+          <a class="mobile-nav-link-link" {% if page.url == "/mario.html" %}style="font-weight: bold;"{% endif %} href="{{ '/mario' | relative_url }}">Product</a>
+          <a class="mobile-nav-link-link" {% if page.url == '/about.html' %}style="font-weight: bold; "{% endif %} href="{{ '/about' | relative_url }}">About Us</a>
+          <a class="mobile-nav-link-link" {% if page.url == '/technology.html' %}style="font-weight: bold;""{% endif %} href="{{ '/technology' | relative_url }}">Technology</a>
+          <a class="mobile-nav-link-link" {% if page.url == '/news.html' %}style="font-weight: bold; ""{% endif %} href="{{ '/news' | relative_url }}">News</a>
+          <a class="mobile-nav-link-link" {% if page.url == '/contact.html' %}style="font-weight: bold;""{% endif %} href="{{ '/contact' | relative_url }}">Contact Us</a>
         </div>
 
         <script>

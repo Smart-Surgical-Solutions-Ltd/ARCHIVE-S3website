@@ -19,17 +19,17 @@ title: News
 
     <div class="newsfeed">
       <div class="newsfeed-text-cont">
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | relative_url }}">
 
           <img
           class="newsfeed-image"
-          src="/media/posts/{{ post.slug }}-thumbnail.png"
+          src="{{ 'media/' | relative_url }}/posts/{{ post.slug }}-thumbnail.png"
           alt="Photo of founder Dr Shuqiao pitching at scale space."
           />
         </a>
       </div>
       <div class="newsfeed-text-cont">
-        <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+        <a href="{{ post.url | relative_url }}"><h2>{{ post.title }}</h2></a>
         <p style="margin-bottom: 16px;">{{ post.author }}  //  {{ post.date | date: "%-d %B, %Y" }}</p> 
         <div class="newsfeed-tags">
           {% for tag in post.tags %}
@@ -38,7 +38,7 @@ title: News
         </div>
         <p>
           {{ post.excerpt | strip_html | strip_newlines | truncate: 400 }}
-          <a href="{{ post.url }}" style="display:inline"><b>Read more</b></a>
+          <a href="{{ post.url | relative_url }}" style="display:inline"><b>Read more</b></a>
         </p>
       </div>
     </div>
