@@ -1,0 +1,38 @@
+<!-- Start of Footer -->
+<div class="footer-container">
+  <div class="footer-inner-container">
+    <a href="/" class="footer-logo-cont">
+      <img class="footer-logo" src="/media/nav-logo.png" alt="navbar logo" />
+    </a>
+    <div class="footer-col">
+      <b>Contact</b>
+      <a href="tel:0044123456789">+(44) XXXXXXXXXXXX</a>
+      <a href="https://goo.gl/maps/5CT1ecPs35WLEEk68" target="_blank"
+        >22 Pavilion Terrace, London, United Kingdom, W12 0HT</a
+      >
+    </div>
+    <div class="footer-col">
+      <b>Navigation</b>
+      <a href="/">Home</a>
+      <a href="/mario">Product</a>
+      <a href="/about">About Us</a>
+      <a href="/technology">Technology</a>
+      <a href="/news">News</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <b>Recent News</b>
+      {% for post in site.posts %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endfor %}
+    </div>
+    <div class="footer-col">
+      <b>Socials</b>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+  </div>
+  <hr class="footer-line" />
+  <p>© 2022 Smart Surgical Solutions Ltd. | All Rights Reserved</p>
+</div>
+<!-- End of Footer -->
