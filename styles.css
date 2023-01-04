@@ -92,7 +92,6 @@ a:hover {
   opacity: 0.7;
 }
 
-
 .page-container {
   display: flex;
   flex-direction: column;
@@ -187,7 +186,8 @@ a:hover {
   padding: 80px;
 }
 
-.slideshow-textdiv a:hover, .slideshow-textdiv a:active  {
+.slideshow-textdiv a:hover,
+.slideshow-textdiv a:active {
   text-decoration: none;
 }
 
@@ -729,7 +729,8 @@ a:hover {
   display: block;
 }
 
-.newsfeed-line, .discover-more-line {
+.newsfeed-line,
+.discover-more-line {
   display: none;
 }
 
@@ -768,6 +769,10 @@ a:hover {
   max-width: 300px;
   width: max-content;
   z-index: 99;
+}
+
+.slideshow-link{
+  display: none;
 }
 
 .info-icon-wrapper:hover .info-hover {
@@ -828,7 +833,7 @@ a:hover {
     padding-left: 100px;
   }
 
-  .discover-more-thumbnail{
+  .discover-more-thumbnail {
     margin-bottom: 16px;
   }
   .discover-more-newsfeed {
@@ -1012,6 +1017,8 @@ a:hover {
     transition: all 0.5s ease;
   }
 
+
+
   .mobile-nav-link {
     font-family: "Helvetica Neue";
     font-style: normal;
@@ -1056,12 +1063,17 @@ a:hover {
     display: none;
   }
 
-
   .newsfeed-image {
     height: 200px;
   }
-  
+
   .discover-more-thumbnail {
     height: 200px;
+  }
+
+  .slideshow-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }
