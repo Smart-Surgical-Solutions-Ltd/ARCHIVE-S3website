@@ -3,20 +3,23 @@
 
 <!DOCTYPE html>
 <html>
-
-
   {% include document-head.html %}
 
   <body class="page-container">
     {% include navbar.html %}
 
     <img
-      class="news-header"
+      class="news-header desktop-only"
       src="{{ 'media/' | relative_url }}/posts/{{ page.slug }}-header.png"
       alt="Header image for {{ page.title }}"
     />
+    <img
+      class="news-header mobile-only"
+      src="{{ 'media/' | relative_url }}/posts/{{ page.slug }}-header-mobile.png"
+      alt="Header image for {{ page.title }}"
+    />
     <div class="news-title-block">
-      <h1>{{ page.title }}</h1>
+      <h2>{{ page.title }}</h2>
       <p>{{ page.author }} // {{ page.date | date: "%-d %B, %Y" }}</p>
       <div class="newsfeed-tags">
         {% for tag in page.tags %}
@@ -28,8 +31,12 @@
     <div class="news-content">{{ content }}</div>
 
     <div class="discover-more-newsfeed">
+      {% assign maxRelated = 3 %} 
+      {% assign maxRelatedCounter = 0 %} 
       {% for post in site.posts %}
 
+      {% if post.url != page.url %}
+      <hr class="discover-more-line" />
       <div class="discover-more-column">
         <a href="{{ post.url | relative_url }}">
           <img
@@ -45,10 +52,16 @@
         </p>
         <p>
           {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}
-          <a href="{{ post.url | relative_url }}" style="display: inline"><b>Read more</b></a>
+          <a href="{{ post.url | relative_url }}" style="display: inline"
+            ><b>Read more</b></a
+          >
         </p>
       </div>
-
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% if maxRelatedCounter >= maxRelated %}
+          {% break %}
+        {% endif %}
+      {% endif %}
       {% endfor %}
     </div>
 

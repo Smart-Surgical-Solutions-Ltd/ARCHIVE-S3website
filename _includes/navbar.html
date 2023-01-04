@@ -17,7 +17,7 @@
 
         <div id="mobile-nav" class="mobile-nav-container mobile-only">
           <a class="mobile-nav-close" onclick="closeNav()"><img src="{{ 'media/close-icon.svg' | relative_url }}" ></a>
-          <a class="mobile-nav-link-link" {% if page.url == "/" %}style="font-weight: bold;"{% endif %} href="/">Home</a>
+          <a class="mobile-nav-link-link" {% if page.url == "/" %}style="font-weight: bold;"{% endif %} href="{{ '/' | relative_url }}">Home</a>
           <a class="mobile-nav-link-link" {% if page.url == "/mario.html" %}style="font-weight: bold;"{% endif %} href="{{ '/mario' | relative_url }}">Product</a>
           <a class="mobile-nav-link-link" {% if page.url == '/about.html' %}style="font-weight: bold; "{% endif %} href="{{ '/about' | relative_url }}">About Us</a>
           <a class="mobile-nav-link-link" {% if page.url == '/technology.html' %}style="font-weight: bold;""{% endif %} href="{{ '/technology' | relative_url }}">Technology</a>
