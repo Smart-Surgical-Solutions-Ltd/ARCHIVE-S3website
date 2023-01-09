@@ -1,38 +1,38 @@
 <!-- Start of Footer -->
 <div class="footer-container">
-  <div class="footer-inner-container">
-    <a href="{{ '/' | relative_url }}" class="footer-logo-cont">
-      <img class="footer-logo" src="{{ 'media/nav-logo.png' | relative_url }}" alt="navbar logo" />
-    </a>
-    <div class="footer-col">
-      <b>Contact</b>
-      <a href="tel:0044123456789">+(44) XXXXXXXXXXXX</a>
-      <a href="https://goo.gl/maps/5CT1ecPs35WLEEk68" target="_blank"
-        >22 Pavilion Terrace, London, United Kingdom, W12 0HT</a
-      >
+    <div class="footer-inner-container">
+        <a href="{{ '/' | relative_url }}" class="footer-logo-cont">
+            <img class="footer-logo" src="{{ 'media/nav-logo.png' | relative_url }}" alt="navbar logo"/>
+        </a>
+        <div class="footer-col">
+            <b>Contact</b>
+            <!--      <a href="tel:0044123456789">+(44) XXXXXXXXXXXX</a>-->
+            <a href="https://goo.gl/maps/SZdyakwoCAeDTAwu6" target="_blank"
+            >Sir Michael Uren Hub, <br>80 Wood Lane, <br>London, <br>United Kingdom, <br>W12 0BZ</a
+            >
+        </div>
+        <div class="footer-col">
+            <b>Navigation</b>
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/mario' | relative_url }}">Product</a>
+            <a href="{{ '/technology' | relative_url }}">Technology</a>
+            <a href="{{ '/team' | relative_url }}">Team</a>
+            <a href="{{ '/news' | relative_url }}">News</a>
+            <a href="{{ '/contact' | relative_url }}">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <b>Recent News</b>
+            {% for post in site.posts %}
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% endfor %}
+        </div>
+        <div class="footer-col">
+            <b>Socials</b>
+            <a href="https://www.linkedin.com/company/smart-surgical-solutions/" target="_blank">LinkedIn</a>
+<!--            <a href="https://www.twitter.com" target="_blank">Twitter</a>-->
+        </div>
     </div>
-    <div class="footer-col">
-      <b>Navigation</b>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/mario' | relative_url }}">Product</a>
-      <a href="{{ '/about' | relative_url }}">About Us</a>
-      <a href="{{ '/technology' | relative_url }}">Technology</a>
-      <a href="{{ '/news' | relative_url }}">News</a>
-      <a href="{{ '/contact' | relative_url }}">Contact Us</a>
-    </div>
-    <div class="footer-col">
-      <b>Recent News</b>
-      {% for post in site.posts %}
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      {% endfor %}
-    </div>
-    <div class="footer-col">
-      <b>Socials</b>
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://www.twitter.com" target="_blank">Twitter</a>
-    </div>
-  </div>
-  <hr class="footer-line" />
-  <p>© 2022 Smart Surgical Solutions Ltd. | All Rights Reserved</p>
+    <hr class="footer-line"/>
+    <p>© 2022 Smart Surgical Solutions Ltd. | All Rights Reserved</p>
 </div>
 <!-- End of Footer -->
