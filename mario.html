@@ -4,233 +4,243 @@ title: M.A.R.I.O
 
 <!DOCTYPE html>
 <html>
-{% include document-head.html %}
-<body class="page-container">
-{% include navbar.html %}
-
-<div class="section-block">
-    <div class="section-block-text-cont">
-        <h1>M.A.R.I.O</h1>
-        <p>
+  {% include document-head.html %}
+  <body>
+    {% include navbar.html %}
+    <div class="page-container">
+      <div class="section-block" style="margin-top: 48px">
+        <div class="section-block-text-cont">
+          <h1>M.A.R.I.O</h1>
+          <p>
             Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet nulla
             pellentesque. Et lorem vel mauris imperdiet sed vel dui ultrices
             nulla. Ullamcorper maecenas cras sed maecenas ornare pharetra turpis
             hendrerit. Nibh malesuada neque sodales rhoncus sed a tempus
-            condimentum. Cursus sit mollis eget dictum sit. Lorem ipsum dolor sit
-            amet consectetur. Lectus bibendum amet nulla pellentesque. Et lorem
-            vel mauris imperdiet sed vel dui ultrices nulla. Ullamcorper maecenas
-            cras sed maecenas ornare pharetra turpis hendrerit.
-        </p>
-    </div>
-    <div class="section-block-text-cont drop-shadow">
-        <img
-                class="section-block-image"
-                src="{{ 'media/mario-img1.png' | relative_url }}"
-                alt="Image of M.A.R.I.O"
-        />
-    </div>
-</div>
+            condimentum. Cursus sit mollis eget dictum sit. Lorem ipsum dolor
+            sit amet consectetur. Lectus bibendum amet nulla pellentesque. Et
+            lorem vel mauris imperdiet sed vel dui ultrices nulla. Ullamcorper
+            maecenas cras sed maecenas ornare pharetra turpis hendrerit.
+          </p>
+        </div>
+        <div class="section-block-text-cont drop-shadow">
+          <img
+            class="section-block-image"
+            src="{{ 'media/mario-img1.png' | relative_url }}"
+            alt="Image of M.A.R.I.O"
+          />
+        </div>
+      </div>
 
-<div class="section-inner-block-highlight">
-    <div class="flex-row" style="justify-content: space-between">
-        <div class="equal-col stats-col">
+      <div class="section-inner-block-highlight">
+        <div class="flex-row" style="justify-content: space-between">
+          <div class="equal-col stats-col">
             <h1 class="white">4.3%</h1>
             <p>CAGR of the knee replacement market.</p>
-        </div>
-        <div class="equal-col stats-col">
+          </div>
+          <div class="equal-col stats-col">
             <h1 class="white">4.3%</h1>
             <p>CAGR of the knee replacement market.</p>
-        </div>
-        <div class="equal-col stats-col">
+          </div>
+          <div class="equal-col stats-col">
             <h1 class="white">4.3%</h1>
             <p>CAGR of the knee replacement market.</p>
-        </div>
-        <div class="equal-col stats-col">
+          </div>
+          <div class="equal-col stats-col">
             <h1 class="white">4.3%</h1>
             <p>CAGR of the knee replacement market.</p>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<div class="youtube-container">
-    <iframe
-            width="100%"
-            height="680px"
-            src="https://www.youtube.com/embed/MEhzss28us8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-    ></iframe>
-</div>
+      <div class="youtube-container">
+        <iframe
+          width="100%"
+          height="680px"
+          src="https://www.youtube.com/embed/MEhzss28us8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-<div class="section-block inverted">
-    <div class="section-block-text-cont drop-shadow">
-        <img
-                class="section-block-image"
-                src="{{ 'media/mario-img2.png' | relative_url }}"
-                alt="Image of Product Features"
-        />
-    </div>
-    <div class="section-block-text-cont">
-        <h1>PRODUCT FEATURES</h1>
-        <p>
+      <div class="section-block inverted">
+        <div class="section-block-text-cont drop-shadow">
+          <img
+            class="section-block-image"
+            src="{{ 'media/mario-img2.png' | relative_url }}"
+            alt="Image of Product Features"
+          />
+        </div>
+        <div class="section-block-text-cont">
+          <h1>PRODUCT FEATURES</h1>
+          <p>
             Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet nulla
             pellentesque. Et lorem vel mauris imperdiet sed vel dui ultrices
             nulla. Ullamcorper maecenas cras sed maecenas ornare pharetra turpis
             hendrerit. Nibh malesuada neque sodales rhoncus sed a tempus
-            condimentum. Cursus sit mollis eget dictum sit. Lorem ipsum dolor sit
-            amet consectetur. Lectus bibendum amet nulla pellentesque. Et lorem
-            vel mauris imperdiet sed vel dui ultrices nulla. Ullamcorper maecenas
-            cras sed maecenas ornare pharetra turpis hendrerit.
-        </p>
-    </div>
-</div>
-
-<div class="section-block-highlight">
-    <h1 class="white">TESTIMONIALS</h1>
-    <div class="testimonials-wrapper">
-        <span class="testimonials-nav" onclick="plusSlides(-1)"></span>
-        <span class="testimonials-nav" style="right: 0;" onclick="plusSlides(1)"></span>
-        <div class="testimonials-slider">
-            <div class="testimonial">
-                <img
-                        class="testimonial-image"
-                        src="{{ 'media/testimonial1.png' | relative_url }}"
-                        alt="testimonial image"
-                />
-                <div class="testimonial-right">
-                    <p>
-                        “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
-                        nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
-                        ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
-                        pharetra turpis hendrerit. “
-                    </p>
-                    <h3>Name of testimonial, Company Name</h3>
-                </div>
-            </div>
-            <div class="testimonial">
-                <img
-                        class="testimonial-image"
-                        src="{{ 'media/testimonial1.png' | relative_url }}"
-                        alt="testimonial image"
-                />
-                <div class="testimonial-right">
-                    <p>
-                        “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
-                        nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
-                        ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
-                        pharetra turpis hendrerit. “
-                    </p>
-                    <h3>Name of testimonial, Company Name</h3>
-                </div>
-            </div>
-            <div class="testimonial">
-                <img
-                        class="testimonial-image"
-                        src="{{ 'media/testimonial1.png' | relative_url }}"
-                        alt="testimonial image"
-                />
-                <div id="testimonial3" class="testimonial-right">
-                    <p>
-                        “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
-                        nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
-                        ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
-                        pharetra turpis hendrerit. “
-                    </p>
-                    <h3>Name of testimonial, Company Name</h3>
-                </div>
-            </div>
-            <div class="testimonial">
-                <img
-                        class="testimonial-image"
-                        src="{{ 'media/testimonial1.png' | relative_url }}"
-                        alt="testimonial image"
-                />
-                <div id="testimonial3" class="testimonial-right">
-                    <p>
-                        “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
-                        nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
-                        ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
-                        pharetra turpis hendrerit. “
-                    </p>
-                    <h3>Name of testimonial, Company Name</h3>
-                </div>
-            </div>
+            condimentum. Cursus sit mollis eget dictum sit. Lorem ipsum dolor
+            sit amet consectetur. Lectus bibendum amet nulla pellentesque. Et
+            lorem vel mauris imperdiet sed vel dui ultrices nulla. Ullamcorper
+            maecenas cras sed maecenas ornare pharetra turpis hendrerit.
+          </p>
         </div>
-    </div>
-    <div class="testimonial-dots">
-        <span class="slideshow-dot" onclick="scrollTestimonial(1)"></span>
-        <span class="slideshow-dot" onclick="scrollTestimonial(2)"></span>
-        <span class="slideshow-dot" onclick="scrollTestimonial(3)"></span>
-        <span class="slideshow-dot" onclick="scrollTestimonial(4)"></span>
-    </div>
-</div>
+      </div>
 
-<div style="height: 120px"></div>
+      <div class="section-block-highlight">
+        <h1 class="white">TESTIMONIALS</h1>
+        <div class="testimonials-wrapper">
+          <span class="testimonials-nav" onclick="plusSlides(-1)"></span>
+          <span
+            class="testimonials-nav"
+            style="right: 0"
+            onclick="plusSlides(1)"
+          ></span>
+          <div class="testimonials-slider">
+            <div class="testimonial">
+              <img
+                class="testimonial-image"
+                src="{{ 'media/testimonial1.png' | relative_url }}"
+                alt="testimonial image"
+              />
+              <div class="testimonial-right">
+                <p>
+                  “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
+                  nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
+                  ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
+                  pharetra turpis hendrerit. “
+                </p>
+                <h3>Name of testimonial, Company Name</h3>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img
+                class="testimonial-image"
+                src="{{ 'media/testimonial1.png' | relative_url }}"
+                alt="testimonial image"
+              />
+              <div class="testimonial-right">
+                <p>
+                  “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
+                  nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
+                  ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
+                  pharetra turpis hendrerit. “
+                </p>
+                <h3>Name of testimonial, Company Name</h3>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img
+                class="testimonial-image"
+                src="{{ 'media/testimonial1.png' | relative_url }}"
+                alt="testimonial image"
+              />
+              <div id="testimonial3" class="testimonial-right">
+                <p>
+                  “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
+                  nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
+                  ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
+                  pharetra turpis hendrerit. “
+                </p>
+                <h3>Name of testimonial, Company Name</h3>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img
+                class="testimonial-image"
+                src="{{ 'media/testimonial1.png' | relative_url }}"
+                alt="testimonial image"
+              />
+              <div id="testimonial3" class="testimonial-right">
+                <p>
+                  “Lorem ipsum dolor sit amet consectetur. Lectus bibendum amet
+                  nulla pellentesque. Et lorem vel mauris imperdiet sed vel dui
+                  ultrices nulla. Ullamcorper maecenas cras sed maecenas ornare
+                  pharetra turpis hendrerit. “
+                </p>
+                <h3>Name of testimonial, Company Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="slideshow-dot" onclick="scrollTestimonial(1)"></span>
+          <span class="slideshow-dot" onclick="scrollTestimonial(2)"></span>
+          <span class="slideshow-dot" onclick="scrollTestimonial(3)"></span>
+          <span class="slideshow-dot" onclick="scrollTestimonial(4)"></span>
+        </div>
+      </div>
 
-{% include footer.html %}
+      <div style="height: 120px"></div>
 
-<script type="text/javascript">
-    var sliderElement = document.querySelector(".testimonials-slider");
-    let numSlides = sliderElement.querySelectorAll(".testimonial").length;
-    let sliderGap = 80;
-    let slideWidth = sliderElement.querySelectorAll(".testimonial")[0].scrollWidth + sliderGap;
-    let initialSliderScrollPos = (window.innerWidth - slideWidth) / 2;
-    let currentSliderScrollPos = initialSliderScrollPos; //start position minus padding
-    let currentSlideShown = 1;
-    let slideMaxScroll = initialSliderScrollPos + numSlides * slideWidth;
-    let testimonialTimer;
+      {% include footer.html %}
 
-    scrollTestimonial(currentSlideShown);
+      <script type="text/javascript">
+        var sliderElement = document.querySelector(".testimonials-slider");
+        let numSlides = sliderElement.querySelectorAll(".testimonial").length;
+        let sliderGap = 80;
+        let slideWidth =
+          sliderElement.querySelectorAll(".testimonial")[0].scrollWidth +
+          sliderGap;
+        let initialSliderScrollPos = (window.innerWidth - slideWidth) / 2;
+        let currentSliderScrollPos = initialSliderScrollPos; //start position minus padding
+        let currentSlideShown = 1;
+        let slideMaxScroll = initialSliderScrollPos + numSlides * slideWidth;
+        let testimonialTimer;
 
-    function plusSlides(n) {
-        var newSlide = currentSlideShown + n;
-        if (newSlide < 1) {
+        scrollTestimonial(currentSlideShown);
+
+        function plusSlides(n) {
+          var newSlide = currentSlideShown + n;
+          if (newSlide < 1) {
             newSlide = numSlides;
-        } else if (newSlide > numSlides) {
+          } else if (newSlide > numSlides) {
             newSlide = 1;
+          }
+          scrollTestimonial(newSlide);
         }
-        scrollTestimonial(newSlide);
-    }
 
-    /**
-     * Scroll to previous slide within the slider
-     */
-    function scrollTestimonial(n) {
-        clearTimeout(testimonialTimer);
+        /**
+         * Scroll to previous slide within the slider
+         */
+        function scrollTestimonial(n) {
+          clearTimeout(testimonialTimer);
 
-        slideWidth = sliderElement.querySelectorAll(".testimonial")[0].scrollWidth + sliderGap
+          slideWidth =
+            sliderElement.querySelectorAll(".testimonial")[0].scrollWidth +
+            sliderGap;
 
-        currentSlideShown = n;
-        // Calculate the new scroll position for the slider
-        var newSliderScrollPos = initialSliderScrollPos + (n - 1) * slideWidth;
-        let dots = document.getElementsByClassName("slideshow-dot");
+          currentSlideShown = n;
+          // Calculate the new scroll position for the slider
+          var newSliderScrollPos =
+            initialSliderScrollPos + (n - 1) * slideWidth;
+          let dots = document.getElementsByClassName("slideshow-dot");
 
-        // console.log(newSliderScrollPos);
-        // var sliderElement = document.querySelector(".testimonials-slider");
-        // Scroll to the previous slide
-        sliderElement.scrollTo(newSliderScrollPos, 0);
+          // // console.log(newSliderScrollPos);
+          // var sliderElement = document.querySelector(".testimonials-slider");
+          // Scroll to the previous slide
+          sliderElement.scrollTo(newSliderScrollPos, 0);
 
-        // Update the current slider scroll position
-        currentSliderScrollPos = newSliderScrollPos;
+          // Update the current slider scroll position
+          currentSliderScrollPos = newSliderScrollPos;
 
-        for (i = 0; i < dots.length; i++) {
+          for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(
-                " slideshow-active",
-                ""
+              " slideshow-active",
+              ""
             );
-        }
-        dots[currentSlideShown - 1].className += " slideshow-active";
+          }
+          dots[currentSlideShown - 1].className += " slideshow-active";
 
-        testimonialTimer = setTimeout(() => {
+          testimonialTimer = setTimeout(() => {
             var m = currentSlideShown + 1;
             if (m > numSlides) {
-                m = 1;
+              m = 1;
             }
             scrollTestimonial(m);
-        }, 5000);
-    }
-</script>
-</body>
+          }, 5000);
+        }
+      </script>
+    </div>
+  </body>
 </html>

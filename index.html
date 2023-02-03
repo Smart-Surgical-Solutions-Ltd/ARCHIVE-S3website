@@ -4,329 +4,373 @@ title: Home
 
 <!DOCTYPE html>
 <html>
-{% include document-head.html %}
-<body class="page-container">
-{% include navbar.html %}
-
-<!-- Slideshow container -->
-<div class="slideshow-wrapper">
-    <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="slideshow-div">
+  {% include document-head.html %}
+  <body>
+    {% include navbar.html %}
+    <div class="page-container">
+      <!-- Slideshow container -->
+      <div class="slideshow-wrapper">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="slideshow-div">
             <div class="slideshow-textdiv">
-                <h1 class="desktop-only" style="color: white">M.A.R.I.O</h1>
-                <a class="slideshow-link" href="{{ '/mario' | relative_url }}"><h1 style="color: white">M.A.R.I.O</h1>
-                    <img style="height: 36px;" src="{{ 'media/arrow-right.svg' | relative_url }}" alt=""/></a>
-                <h3 class="" style="color: white">
-                    <u>M</u>obile <u>A</u>ssisted <u>R</u>econstruction <u>I</u>n <u>O</u>rthopaedics.
-                </h3>
-                <a class="white-button" href="{{ '/mario' | relative_url }}">
-                    <h3 class="blue">Discover More</h3>
-                </a>
+              <h1 class="desktop-only" style="color: white">M.A.R.I.O</h1>
+              <a class="slideshow-link" href="{{ '/mario' | relative_url }}"
+                ><h1 style="color: white">M.A.R.I.O</h1>
+                <img
+                  style="height: 36px"
+                  src="{{ 'media/arrow-right.svg' | relative_url }}"
+                  alt=""
+              /></a>
+              <h3 class="" style="color: white">
+                <u>M</u>obile <u>A</u>ssisted <u>R</u>econstruction <u>I</u>n
+                <u>O</u>rthopaedics.
+              </h3>
+              <a class="white-button" href="{{ '/mario' | relative_url }}">
+                <h3 class="blue">Discover More</h3>
+              </a>
             </div>
-            <img src="{{ 'media/mario-img1.png' | relative_url }}" class="slideshow-image" alt=""/>
-        </div>
+            <img
+              src="{{ 'media/mario-img1.png' | relative_url }}"
+              class="slideshow-image"
+              alt=""
+            />
+          </div>
 
-        <div class="slideshow-div">
+          <div class="slideshow-div">
             <div class="slideshow-textdiv">
-                <h1 class="desktop-only" style="color: white">CAREERS</h1>
-                <a class="slideshow-link" href="{{ '/contact' | relative_url }}"><h1 style="color: white">CAREERS</h1>
-                    <img style="height: 36px;" src="{{ 'media/arrow-right.svg' | relative_url }}" alt=""/></a>
-                <h3 style="color: white">
-                    Join our team to work on cutting-edge technology.
-                </h3>
-                <a class="white-button" href="{{ '/contact' | relative_url }}">
-                    <h3 class="blue">Job Openings</h3>
-                </a>
+              <h1 class="desktop-only" style="color: white">CAREERS</h1>
+              <a class="slideshow-link" href="{{ '/contact' | relative_url }}"
+                ><h1 style="color: white">CAREERS</h1>
+                <img
+                  style="height: 36px"
+                  src="{{ 'media/arrow-right.svg' | relative_url }}"
+                  alt=""
+              /></a>
+              <h3 style="color: white">
+                Join our team to work on cutting-edge technology.
+              </h3>
+              <a class="white-button" href="{{ '/contact' | relative_url }}">
+                <h3 class="blue">Job Openings</h3>
+              </a>
             </div>
-            <img src="{{ 'media/home-img2.png' | relative_url }}" class="slideshow-image" alt=""/>
-        </div>
+            <img
+              src="{{ 'media/home-img2.png' | relative_url }}"
+              class="slideshow-image"
+              alt=""
+            />
+          </div>
 
-        <div class="slideshow-div">
+          <div class="slideshow-div">
             <div class="slideshow-textdiv">
-                <h1 class="desktop-only" style="color: white">
-                    ARE YOU AN INVESTOR?
-                </h1>
-                <a class="slideshow-link" href="{{ '/contact' | relative_url }}"><h1 style="color: white">INVESTOR?</h1>
-                    <img style="height: 36px;" src="{{ 'media/arrow-right.svg' | relative_url }}" alt=""/></a>
-                <h3 style="color: white">We are actively looking for investment to help us to launch the product.</h3>
-                <a class="white-button" href="{{ '/contact' | relative_url }}">
-                    <h3 class="blue">Discover More</h3>
-                </a>
+              <h1 class="desktop-only" style="color: white">
+                ARE YOU AN INVESTOR?
+              </h1>
+              <a class="slideshow-link" href="{{ '/contact' | relative_url }}"
+                ><h1 style="color: white">INVESTOR?</h1>
+                <img
+                  style="height: 36px"
+                  src="{{ 'media/arrow-right.svg' | relative_url }}"
+                  alt=""
+              /></a>
+              <h3 style="color: white">
+                We are actively looking for investment to help us to launch the
+                product.
+              </h3>
+              <a class="white-button" href="{{ '/contact' | relative_url }}">
+                <h3 class="blue">Discover More</h3>
+              </a>
             </div>
-            <img src="{{ 'media/home-img3.png' | relative_url }}" class="slideshow-image" alt=""/>
-        </div>
+            <img
+              src="{{ 'media/home-img3.png' | relative_url }}"
+              class="slideshow-image"
+              alt=""
+            />
+          </div>
 
-        <!-- Next and previous buttons -->
-        <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- Next and previous buttons -->
+          <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!-- The dots/circles -->
-        <div class="slideshow-dots">
+          <!-- The dots/circles -->
+          <div class="slideshow-dots">
             <span class="slideshow-dot" onclick="scrollSlideshow(1)"></span>
             <span class="slideshow-dot" onclick="scrollSlideshow(2)"></span>
             <span class="slideshow-dot" onclick="scrollSlideshow(3)"></span>
+          </div>
         </div>
-    </div>
-</div>
-<!-- End of Slideshow -->
+      </div>
+      <!-- End of Slideshow -->
 
-<div class="section-block">
-    <div class="section-block-text-cont">
-        <h1>THE NEXT GENERATION OF SURGICAL NAVIGATION</h1>
-        <p>
+      <div class="section-block">
+        <div class="section-block-text-cont">
+          <h1>THE NEXT GENERATION OF SURGICAL NAVIGATION</h1>
+          <p></p>
+        </div>
+        <div class="section-block-text-cont">
+          <img
+            class="section-block-image"
+            src="{{ 'media/mario-demo.png' | relative_url }}"
+            alt="Image of surgery"
+          />
+        </div>
+      </div>
 
-        </p>
-    </div>
-    <div class="section-block-text-cont">
-        <img
-                class="section-block-image"
-                src="{{ 'media/mario-demo.png' | relative_url }}"
-                alt="Image of surgery"
-        />
-    </div>
-</div>
-
-<div class="section-block-highlight">
-    <h1 class="white">THE TEAM</h1>
-    <div class="flex-full-row">
-        <div class="equal-col">
+      <div class="section-block-highlight">
+        <h1 class="white">THE TEAM</h1>
+        <div class="flex-full-row">
+          <div class="equal-col">
             <img
-                    class="team-image"
-                    src="{{ 'media/team-shuqiao.png' | relative_url }}"
-                    alt="Image of Dr Shuqiao Xie"
+              class="team-image"
+              src="{{ 'media/team-shuqiao.png' | relative_url }}"
+              alt="Image of Dr Shuqiao Xie"
             />
             <h3 class="white">Dr Shuqiao Xie</h3>
             <p>Founder &</p>
             <p>Chief Technology Officer</p>
-        </div>
-        <div class="equal-col">
+          </div>
+          <div class="equal-col">
             <img
-                    class="team-image"
-                    src="{{ 'media/team-anthony.png' | relative_url }}"
-                    alt="Image of Prof. Anthony Bull"
+              class="team-image"
+              src="{{ 'media/team-anthony.png' | relative_url }}"
+              alt="Image of Prof. Anthony Bull"
             />
             <h3 class="white">Prof. Anthony Bull</h3>
             <p>Founder &</p>
             <p>Chief Technology Officer</p>
-        </div>
-        <div class="equal-col">
+          </div>
+          <div class="equal-col">
             <img
-                    class="team-image"
-                    src="{{ 'media/team-pierluigi.png' | relative_url }}"
-                    alt="Image of Dr Pierluigi Cuomo"
+              class="team-image"
+              src="{{ 'media/team-pierluigi.png' | relative_url }}"
+              alt="Image of Dr Pierluigi Cuomo"
             />
             <h3 class="white">Dr Pierluigi Cuomo</h3>
             <p>Founder &</p>
             <p>Chief Clinical Officer</p>
-        </div>
-        <div class="equal-col">
+          </div>
+          <div class="equal-col">
             <img
-                    class="team-image"
-                    src="{{ 'media/team-marco.png' | relative_url }}"
-                    alt="Image of Dr Marco Hanaman"
+              class="team-image"
+              src="{{ 'media/team-marco.png' | relative_url }}"
+              alt="Image of Dr Marco Hanaman"
             />
             <h3 class="white">Dr Marco Hanaman</h3>
             <p>Founder</p>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<h1 style="margin-top: 120px">HISTORY OF THE COMPANY</h1>
-<div id="timeline" class="timeline-container">
-    <div class="timeline-wrapper">
-        <div class="timeline-base"></div>
-        <div id="timeline-bar" class="timeline-top"></div>
-        <div id="timeline-dot" class="timeline-dot"></div>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">30th November 2020</p>
-        <h3 class="timeline-text">
-            Pitch to MBA: investment is confirmed
-        </h3>
-    </div>
-    <!--      <div class="timeline-row">-->
-    <!--        <p class="timeline-date">10th December 2020</p>-->
-    <!--        <h3 class="timeline-text">Business plan preparation</h3>-->
-    <!--      </div>-->
-    <div class="timeline-row">
-        <p class="timeline-date">30th March 2021</p>
-        <h3 class="timeline-text">Research contract with MBA is signed</h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">31st March 2021</p>
-        <h3 class="timeline-text">1st cadaver test @ SMU building</h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">9th February 2021</p>
-        <h3 class="timeline-text">
+      <h1 style="margin-top: 120px">HISTORY OF THE COMPANY</h1>
+      <div id="timeline" class="timeline-container">
+        <div class="timeline-wrapper">
+          <div class="timeline-base"></div>
+          <div id="timeline-bar" class="timeline-top"></div>
+          <div id="timeline-dot" class="timeline-dot"></div>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">30th November 2020</p>
+          <h3 class="timeline-text">Pitch to MBA: investment is confirmed</h3>
+        </div>
+        <!--      <div class="timeline-row">-->
+        <!--        <p class="timeline-date">10th December 2020</p>-->
+        <!--        <h3 class="timeline-text">Business plan preparation</h3>-->
+        <!--      </div>-->
+        <div class="timeline-row">
+          <p class="timeline-date">30th March 2021</p>
+          <h3 class="timeline-text">Research contract with MBA is signed</h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">31st March 2021</p>
+          <h3 class="timeline-text">1st cadaver test @ SMU building</h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">9th February 2021</p>
+          <h3 class="timeline-text">
             Knowhow (Surgical navigation using a smartphone) is filed
-        </h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">9th February 2021</p>
-        <h3 class="timeline-text">
+          </h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">9th February 2021</p>
+          <h3 class="timeline-text">
             Knowhow (SSM) is filed
-            <img src="{{ 'media/info-icon.svg' | relative_url }}" class="info-icon"/>
+            <img
+              src="{{ 'media/info-icon.svg' | relative_url }}"
+              class="info-icon"
+            />
             <div class="info-icon-wrapper">
-          <span class="info-hover"
-          >Statistical Shape Model used for bone shape correction, prediction
-            and orthopaedic implant positioning. </span>
+              <span class="info-hover"
+                >Statistical Shape Model used for bone shape correction,
+                prediction and orthopaedic implant positioning.
+              </span>
             </div>
-        </h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">10th June 2021</p>
-        <h3 class="timeline-text">Patent is filed #2108251.6</h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">30th July 2021</p>
-        <h3 class="timeline-text">
+          </h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">10th June 2021</p>
+          <h3 class="timeline-text">Patent is filed #2108251.6</h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">30th July 2021</p>
+          <h3 class="timeline-text">
             Award: Innovate UK SETsquared ICURe
-            <img src="{{ 'media/info-icon.svg' | relative_url }}" class="info-icon"/>
+            <img
+              src="{{ 'media/info-icon.svg' | relative_url }}"
+              class="info-icon"
+            />
             <div class="info-icon-wrapper">
-            <span class="info-hover"
-            >Customer discovery programme, S3 had manged to have a formal interview with more than 80 people,
-              including orthopaedics surgeons, surgical nurses, investors, manufactures </span
-            >
+              <span class="info-hover"
+                >Customer discovery programme, S3 had manged to have a formal
+                interview with more than 80 people, including orthopaedics
+                surgeons, surgical nurses, investors, manufactures
+              </span>
             </div>
-        </h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">4th August 2021</p>
-        <h3 class="timeline-text">Award : EPSRC IAA @ Imperial College</h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">6th October 2021</p>
-        <h3 class="timeline-text">Award : MedTech SuperConnector</h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">25th November 2021</p>
-        <h3 class="timeline-text">Award: Enterprise Fellowship @ Royal Academy of Engineering</h3>
-    </div>
-    <div class="timeline-row">
-        <p class="timeline-date">25th November 2021</p>
-        <h3 class="timeline-text">Partnering with NIHR London In Vitro Diagnostics Co-operative
-            <img src="{{ 'media/info-icon.svg' | relative_url }}" class="info-icon"/>
+          </h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">4th August 2021</p>
+          <h3 class="timeline-text">Award : EPSRC IAA @ Imperial College</h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">6th October 2021</p>
+          <h3 class="timeline-text">Award : MedTech SuperConnector</h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">25th November 2021</p>
+          <h3 class="timeline-text">
+            Award: Enterprise Fellowship @ Royal Academy of Engineering
+          </h3>
+        </div>
+        <div class="timeline-row">
+          <p class="timeline-date">25th November 2021</p>
+          <h3 class="timeline-text">
+            Partnering with NIHR London In Vitro Diagnostics Co-operative
+            <img
+              src="{{ 'media/info-icon.svg' | relative_url }}"
+              class="info-icon"
+            />
             <div class="info-icon-wrapper">
-            <span class="info-hover"
-            >London IVD is helping us for the end-user usability test,
-              understanding the pathway to access NHS, health economics, Patient & Public Involvement etc.</span
-            >
+              <span class="info-hover"
+                >London IVD is helping us for the end-user usability test,
+                understanding the pathway to access NHS, health economics,
+                Patient & Public Involvement etc.</span
+              >
             </div>
-        </h3>
-    </div>
-    <!--      <div class="timeline-row">-->
-    <!--        <p class="timeline-date">10th February 2022</p>-->
-    <!--        <h3 class="timeline-text">Plan A & B</h3>-->
-    <!--      </div>-->
-    <!--      <div class="timeline-row">-->
-    <!--        <p class="timeline-date">18th February 2022</p>-->
-    <!--        <h3 class="timeline-text">S3 registered</h3>-->
-    <!--      </div>-->
-</div>
+          </h3>
+        </div>
+        <!--      <div class="timeline-row">-->
+        <!--        <p class="timeline-date">10th February 2022</p>-->
+        <!--        <h3 class="timeline-text">Plan A & B</h3>-->
+        <!--      </div>-->
+        <!--      <div class="timeline-row">-->
+        <!--        <p class="timeline-date">18th February 2022</p>-->
+        <!--        <h3 class="timeline-text">S3 registered</h3>-->
+        <!--      </div>-->
+      </div>
 
-<div style="height: 150px"></div>
+      <div style="height: 150px"></div>
 
-{% include footer.html %}
+      {% include footer.html %}
 
-<script type="text/javascript">
-    var sliderElement = document.querySelector(".slideshow-container");
-    let numSlides = sliderElement.querySelectorAll(".slideshow-div").length;
-    let initialSliderScrollPos = 0;
-    let currentSliderScrollPos = initialSliderScrollPos; //start position minus padding
-    let currentSlideShown = 1;
-    let slideWidth = sliderElement.scrollWidth / numSlides;
-    let slideMaxScroll = initialSliderScrollPos + numSlides * slideWidth;
-    let slideshowTimer;
+      <script type="text/javascript">
+        var sliderElement = document.querySelector(".slideshow-container");
+        let numSlides = sliderElement.querySelectorAll(".slideshow-div").length;
+        let initialSliderScrollPos = 0;
+        let currentSliderScrollPos = initialSliderScrollPos; //start position minus padding
+        let currentSlideShown = 1;
+        let slideWidth = sliderElement.scrollWidth / numSlides;
+        let slideMaxScroll = initialSliderScrollPos + numSlides * slideWidth;
+        let slideshowTimer;
 
-    scrollSlideshow(currentSlideShown);
+        scrollSlideshow(currentSlideShown);
 
-    function plusSlides(n) {
-        var newSlide = currentSlideShown + n;
-        if (newSlide < 1) {
+        function plusSlides(n) {
+          var newSlide = currentSlideShown + n;
+          if (newSlide < 1) {
             newSlide = numSlides;
-        } else if (newSlide > numSlides) {
+          } else if (newSlide > numSlides) {
             newSlide = 1;
+          }
+          scrollSlideshow(newSlide);
         }
-        scrollSlideshow(newSlide);
-    }
 
-    /**
-     * Scroll to previous slide within the slider
-     */
-    function scrollSlideshow(n) {
-        clearTimeout(slideshowTimer);
+        /**
+         * Scroll to previous slide within the slider
+         */
+        function scrollSlideshow(n) {
+          clearTimeout(slideshowTimer);
 
-        // update variables to allow for resize
-        slideWidth = sliderElement.scrollWidth / numSlides;
+          // update variables to allow for resize
+          slideWidth = sliderElement.scrollWidth / numSlides;
 
-        currentSlideShown = n;
-        // Calculate the new scroll position for the slider
-        var newSliderScrollPos = initialSliderScrollPos + (n - 1) * slideWidth;
-        let dots = document.getElementsByClassName("slideshow-dot");
+          currentSlideShown = n;
+          // Calculate the new scroll position for the slider
+          var newSliderScrollPos =
+            initialSliderScrollPos + (n - 1) * slideWidth;
+          let dots = document.getElementsByClassName("slideshow-dot");
 
-        // console.log(newSliderScrollPos);
-        // var sliderElement = document.querySelector(".slideshows-slider");
-        // Scroll to the previous slide
-        sliderElement.scrollTo(newSliderScrollPos, 0);
+          // // console.log(newSliderScrollPos);
+          // var sliderElement = document.querySelector(".slideshows-slider");
+          // Scroll to the previous slide
+          sliderElement.scrollTo(newSliderScrollPos, 0);
 
-        // Update the current slider scroll position
-        currentSliderScrollPos = newSliderScrollPos;
+          // Update the current slider scroll position
+          currentSliderScrollPos = newSliderScrollPos;
 
-        for (i = 0; i < dots.length; i++) {
+          for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(
-                " slideshow-active",
-                ""
+              " slideshow-active",
+              ""
             );
-        }
-        dots[currentSlideShown - 1].className += " slideshow-active";
+          }
+          dots[currentSlideShown - 1].className += " slideshow-active";
 
-        slideshowTimer = setTimeout(() => {
+          slideshowTimer = setTimeout(() => {
             var m = currentSlideShown + 1;
             if (m > numSlides) {
-                m = 1;
+              m = 1;
             }
             scrollSlideshow(m);
-        }, 5000);
-    }
+          }, 5000);
+        }
 
-    var timeline = document.getElementById("timeline");
-    var timelineDot = document.getElementById("timeline-dot");
-    var timelineBar = document.getElementById("timeline-bar");
-    var flag = true;
-    var timelineTop;
-    var timelineHeight = timeline.getBoundingClientRect().height;
-    var completion = 0;
+        var timeline = document.getElementById("timeline");
+        var timelineDot = document.getElementById("timeline-dot");
+        var timelineBar = document.getElementById("timeline-bar");
+        var flag = true;
+        var timelineTop;
+        var timelineHeight = timeline.getBoundingClientRect().height;
+        var completion = 0;
 
-    document.body.onscroll = function () {
-        console.log(document.documentElement.scrollTop);
+        document.body.onscroll = function () {
+          // console.log(document.documentElement.scrollTop);
 
-        if (
+          if (
             0.54 > timeline.getBoundingClientRect().top / window.innerHeight &&
             timeline.getBoundingClientRect().top / window.innerHeight > 0.46 &&
             flag == true
-        ) {
-            console.log("true");
+          ) {
+            // console.log("true");
             timelineTop = document.documentElement.scrollTop;
             flag = false;
-        }
+          }
 
-        completion =
+          completion =
             Math.max(
-                Math.min(
-                    (100 * (document.documentElement.scrollTop - timelineTop)) /
-                    timelineHeight,
-                    100
-                ),
-                0
+              Math.min(
+                (100 * (document.documentElement.scrollTop - timelineTop)) /
+                  timelineHeight,
+                100
+              ),
+              0
             ) + "%";
 
-        console.log(completion + "%");
+          // console.log(completion + "%");
 
-        timelineBar.style.height = completion;
-        timelineDot.style.top = completion;
-    };
-</script>
-</body>
+          timelineBar.style.height = completion;
+          timelineDot.style.top = completion;
+        };
+      </script>
+    </div>
+  </body>
 </html>

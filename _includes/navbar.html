@@ -1,29 +1,30 @@
 <!-- Navbar container -->
 <nav class="navbar-container">
+    <div class="navbar-inner-container">
     <a href="{{ '/' | relative_url }}">
         <img class="navbar-logo" src="{{ 'media/nav-logo-long.png' | relative_url }}" alt="navbar logo"/>
     </a>
     <div class="navbar-links-container">
-        <div class="navbar-link-wrapper" style="width:51.63px"><a class="navbar-link" {% if page.url== "/"
+        <div class="navbar-link-wrapper" style="width:38.12px"><a class="navbar-link" {% if page.url== "/"
             %}style="font-weight: bold;"{% endif %} href="{{ '/' | relative_url }}">Home</a></div>
         <div class="navbar-link-wrapper" style="width:51.63px"><a class="navbar-link" {% if page.url== "/mario.html"
             %}style="font-weight: bold;"{% endif %} href="{{ '/mario' | relative_url }}">Product</a></div>
         <div class="navbar-link-wrapper" style="width:75.55px"><a class="navbar-link" {% if page.url==
             '/technology.html' %}style="font-weight: bold;""{% endif %} href="{{ '/technology' | relative_url
             }}">Technology</a></div>
-        <div class="navbar-link-wrapper" style="width:62.32px"><a class="navbar-link" {% if page.url== '/team.html'
+        <div class="navbar-link-wrapper" style="width:38.12px"><a class="navbar-link" {% if page.url== '/team.html'
             %}style="font-weight: bold; "{% endif %} href="{{ '/team' | relative_url }}">Team</a></div>
         <div class="navbar-link-wrapper" style="width: 38.12px"><a class="navbar-link" {% if page.url== '/news.html'
             %}style="font-weight: bold; ""{% endif %} href="{{ '/news' | relative_url }}">News</a></div>
         <div class="navbar-link-wrapper" style="width:75.65px"><a class="navbar-link" {% if page.url== '/contact.html'
             %}style="font-weight: bold;""{% endif %} href="{{ '/contact' | relative_url }}">Contact Us</a></div>
     </div>
-    <a onclick="openNav()" class="mobile-only">
+    <a onclick="openNav()" class="small-screen-only">
 
         <img src="{{ 'media/burger-menu.svg' | relative_url }}">
     </a>
 
-    <div id="mobile-nav" class="mobile-nav-container mobile-only">
+    <div id="mobile-nav" class="mobile-nav-container small-screen-only">
         <a class="mobile-nav-close" onclick="closeNav()"><img src="{{ 'media/close-icon.svg' | relative_url }}"></a>
         <a class="mobile-nav-link-link" {% if page.url== "/" %}style="font-weight: bold;"{% endif %} href="{{ '/' |
         relative_url }}">Home</a>
@@ -53,5 +54,6 @@
             mobileNav.style.opacity = 0;
         }
     </script>
+    </div>
 </nav>
 <!-- End of navbar -->

@@ -3,68 +3,63 @@
 
 <!DOCTYPE html>
 <html>
-{% include document-head.html %}
+  {% include document-head.html %}
 
-<body class="page-container">
-{% include navbar.html %}
-
-<img
+  <body>
+    {% include navbar.html %}
+    <div class="page-container">
+      <img
         class="news-header desktop-only"
         src="{{ 'media/' | relative_url }}/posts/{{ page.slug }}-header.png"
         alt="Header image for {{ page.title }}"
-/>
-<img
+      />
+      <img
         class="news-header mobile-only"
         src="{{ 'media/' | relative_url }}/posts/{{ page.slug }}-header-mobile.png"
         alt="Header image for {{ page.title }}"
-/>
-<div class="news-title-block">
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.author }} // {{ page.date | date: "%-d %B, %Y" }}</p>
-    <div class="newsfeed-tags">
-        {% for tag in page.tags %}
-        <div class="newsfeed-tag">{{ tag }}</div>
-        {% endfor %}
-    </div>
-</div>
+      />
+      <div class="news-title-block">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.author }} // {{ page.date | date: "%-d %B, %Y" }}</p>
+        <div class="newsfeed-tags">
+          {% for tag in page.tags %}
+          <div class="newsfeed-tag">{{ tag }}</div>
+          {% endfor %}
+        </div>
+      </div>
 
-<div class="news-content">{{ content }}</div>
+      <div class="news-content">{{ content }}</div>
 
-<div class="discover-more-newsfeed">
-    {% assign maxRelated = 3 %}
-    {% assign maxRelatedCounter = 0 %}
-    {% for post in site.posts %}
-
-    {% if post.url != page.url %}
-    <hr class="discover-more-line"/>
-    <div class="discover-more-column">
-        <a href="{{ post.url | relative_url }}">
+      <div class="discover-more-newsfeed">
+        {% assign maxRelated = 3 %} {% assign maxRelatedCounter = 0 %} {% for
+        post in site.posts %} {% if post.url != page.url %}
+        <hr class="discover-more-line" />
+        <div class="discover-more-column">
+          <a href="{{ post.url | relative_url }}">
             <img
-                    class="discover-more-thumbnail"
-                    src="{{ 'media/' | relative_url }}/posts/{{ post.slug }}-thumbnail.png"
-                    alt="Photo of founder Dr Shuqiao pitching at scale space."
+              class="discover-more-thumbnail"
+              src="{{ 'media/' | relative_url }}/posts/{{ post.slug }}-thumbnail.png"
+              alt="Photo of founder Dr Shuqiao pitching at scale space."
             />
-        </a>
+          </a>
 
-        <a href="{{ post.url | relative_url }}"><h2>{{ post.title }}</h2></a>
-        <p style="margin-bottom: 16px">
+          <a href="{{ post.url | relative_url }}"><h2>{{ post.title }}</h2></a>
+          <p style="margin-bottom: 16px">
             {{ post.author }} // {{ post.date | date: "%-d %B, %Y" }}
-        </p>
-        <p>
+          </p>
+          <p>
             {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}
             <a href="{{ post.url | relative_url }}" style="display: inline"
-            ><b>Read more</b></a
+              ><b>Read more</b></a
             >
-        </p>
-    </div>
-    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-    {% if maxRelatedCounter >= maxRelated %}
-    {% break %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-</div>
+          </p>
+        </div>
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %} {% if
+        maxRelatedCounter >= maxRelated %} {% break %} {% endif %} {% endif %}
+        {% endfor %}
+      </div>
 
-{% include footer.html %}
-</body>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>
