@@ -404,10 +404,11 @@ a:hover {
   flex-direction: column;
   width: 100%;
   max-width: var(--max-page-width);
-  background-color: var(--blue);
+  /*background-color: var(--blue);*/
+  background-color: rgb(42,63,82);
   color: var(--white);
   gap: 64px;
-  padding: 80px;
+  padding: 30px;
   align-items: center;
   border-radius: 8px;
 }
@@ -434,7 +435,7 @@ a:hover {
 .team-row {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   max-width: var(--max-page-width);
   gap: 40px;
   flex-wrap: wrap;
