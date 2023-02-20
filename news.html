@@ -47,7 +47,7 @@ title: News
                 <a href="{{ post.url | relative_url }}">
                     <img
                             class="newsfeed-image"
-                            src="/media/posts/{{ post.slug }}-thumbnail.png"
+                            src="{{ 'media/' | relative_url }}/posts/{{ post.slug }}-thumbnail.png"
                             alt="Photo"
                     />
                 </a>
