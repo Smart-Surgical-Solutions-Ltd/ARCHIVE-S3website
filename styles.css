@@ -239,7 +239,7 @@ a:hover {
   height: 100%;
   width: 40%;
   background-color: var(--white);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .slideshow-prev,
@@ -338,7 +338,7 @@ a:hover {
 
 .section-block-image {
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -364,7 +364,7 @@ a:hover {
 
 .newsfeed-image {
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -576,7 +576,7 @@ a:hover {
 .testimonial-image {
   height: 240px;
   width: 240px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
 }
 
@@ -1187,8 +1187,8 @@ a:hover {
   }
 
   .newsfeed-image {
-    height: 50px;
-    width: 100px;
+    height: 100px;
+    width: 200px;
     object-fit: contain;
   }
 
